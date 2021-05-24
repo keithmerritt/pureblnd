@@ -9,7 +9,7 @@ const App = () => {
       <Header />
         <main>
         <Container>
-          <h1>Pureblnd</h1>
+          <h1 className = 'py-3'>Pureblnd</h1>
         </Container>
         </main>
       <Footer />

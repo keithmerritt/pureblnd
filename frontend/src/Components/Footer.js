@@ -4,7 +4,14 @@ import { Container, Row, Col } from 'react-bootstrap';
 const Footer = () => {
     return (
         <footer>
-            <h2>I am a footer</h2>
+            <Container>
+                <Row>
+                    <Col className = 'text-center py'>
+                        <p>Copyright &copy; PureBlnd</p>
+                    </Col>
+                </Row>
+            </Container>
+            
         </footer>
     )
 }
