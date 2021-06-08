@@ -1,0 +1,32 @@
+{
+  "name": "pureblndstore",
+  "version": "1.0.0",
+  "description": "PureBlnd MERN App",
+  "main": "server.js",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keithmerritt/pureblnd.git"
+  },
+  "author": "Keith Merritt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keithmerritt/pureblnd/issues"
+  },
+  "homepage": "https://github.com/keithmerritt/pureblnd#readme"
+}

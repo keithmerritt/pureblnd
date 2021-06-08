@@ -2,7 +2,7 @@ const products = [
   {
   _id: '1',
   name: 'PureBlnd Blender Black',
-  image: 'img/b-black.JPG',
+  image: '/images/bblack.jpg',
   description: 'The Pureblnd Blender comes in a sleek black colour. Portable and powerful, you can easily make your favourite smoothies on the go! Perfect for long trips and gym workouts.' , 
   brand: 'PureBlnd',
   category: 'Blender',
@@ -14,7 +14,7 @@ const products = [
   {
   _id: '2',
   name: 'PureBlnd Blender Blue',
-  image: 'img/b-blue.JPG',
+  image: '/images/bblue.jpg',
   description: 'The Pureblnd Blender comes in a calming blue colour. Portable and powerful, you can easily make your favourite smoothies on the go! Perfect for long trips and gym workouts.' , 
   brand: 'PureBlnd',
   category: 'Blender',
@@ -26,7 +26,7 @@ const products = [
   {
     _id: '3',
     name: 'PureBlnd Blender Green',
-    image: 'img/b-green.JPG',
+    image: '/images/bgreen.jpg',
     description: 'The Pureblnd Blender comes in a vibrant green colour. Portable and powerful, you can easily make your favourite smoothies on the go! Perfect for long trips and gym workouts.' , 
     brand: 'PureBlnd',
     category: 'Blender',
@@ -38,7 +38,7 @@ const products = [
     {
       _id: '4',
       name: 'PureBlnd Blender Pink',
-      image: 'img/b-pink.JPG',
+      image: '/images/bpink.jpg',
       description: 'The Pureblnd Blender comes in a striking pink colour. Portable and powerful, you can easily make your favourite smoothies on the go! Perfect for long trips and gym workouts.' , 
       brand: 'PureBlnd',
       category: 'Blender',
@@ -50,7 +50,7 @@ const products = [
       {
         _id: '5',
         name: 'PureBlnd Blender White',
-        image: 'img/b-white.JPG',
+        image: '/images/bwhite.jpg',
         description: 'The Pureblnd Blender comes in a white colour. Portable and powerful, you can easily make your favourite smoothies on the go! Perfect for long trips and gym workouts.' , 
         brand: 'PureBlnd',
         category: 'Blender',
@@ -62,7 +62,7 @@ const products = [
         {
           _id: '6',
           name: 'PureBlnd Blender Cyan',
-          image: 'img/b-cyan.JPG',
+          image: '/images/bcyan.jpg',
           description: 'The Pureblnd Blender comes in a cyan colour. Portable and powerful, you can easily make your favourite smoothies on the go! Perfect for long trips and gym workouts.' , 
           brand: 'PureBlnd',
           category: 'Blender',
