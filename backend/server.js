@@ -1,6 +1,6 @@
 import express from 'express'
 import dotenv from 'dotenv'
-import color from 'colors'
+import colors from 'colors'
 import connectDB from './config/db.js'
 import { notFound, errorHandler } from './middleware/errorMiddleware.js'
 import productRoutes from './routes/productRoutes.js'
