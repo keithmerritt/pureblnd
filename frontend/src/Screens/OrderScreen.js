@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react'
+import axios from 'axios'
 import { Link } from 'react-router-dom'
 import { Button, Row, Col, ListGroup, Image, Card } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
-import Message from '../Components/Message'
-import Loader from '../Components/Loader'
+import Message from '../components/Message'
+import Loader from '../components/Loader'
 import { getOrderDetails } from '../actions/orderActions'
 
    
@@ -23,10 +24,16 @@ const OrderScreen = ({ match }) => {
     order.itemsPrice = addDecimals(order.orderItems.reduce((acc, item) => acc + item.price * item.qty, 0))
 }
         useEffect(() => {
+            const addPayPalScript = async () => {
+                const { data: clientId } = await axios.get('/api/config/paypal')
+                console.log(clientId)
+            }
+            addPayPalScript()
            if(!order || order._id !== orderId) {
             dispatch(getOrderDetails(orderId))
            } 
         },[dispatch, orderId])
+
 
     return loading ? <Loader /> : error ? <Message variant='danger'>{error}</Message>
     : 
